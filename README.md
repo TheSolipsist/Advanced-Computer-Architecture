@@ -4,7 +4,7 @@
 
 Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
  
-\
+
 ### Question 1:
 ```python
 
@@ -40,12 +40,12 @@ cpu_types = {
 ```
 
 
-\
+
 ### Question 2:
 
 #### a.
-From config.ini:\
-\
+From config.ini:
+
 Verification of 2GB default memory size:
 ```ini
 mem_ranges=0:2147483648
@@ -70,5 +70,5 @@ We notice that the reported number of commited instructions is very close to the
 #### c.
 From stats.txt:
 ```ini
-ystem.cpu_cluster.l2.overall_accesses::total          479                       # number of overall (read+write) accesses
+system.cpu_cluster.l2.overall_accesses::total          479                       # number of overall (read+write) accesses
 ```
