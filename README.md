@@ -46,4 +46,5 @@ mem_ranges=0:2147483648
 ```
 Verification of 4GHz cpu-freq:
 ```ini
+clock=250
 ```
