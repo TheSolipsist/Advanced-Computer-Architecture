@@ -45,7 +45,6 @@ cpu_types = {
 
 #### a.
 From config.ini:
-
 Verification of 2GB default memory size:
 ```ini
 mem_ranges=0:2147483648
