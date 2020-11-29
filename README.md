@@ -1,7 +1,8 @@
 # Advanced-Computer-Architecture
 
-First Lab Questions:
+## First Lab Questions:
 
  
  
-1:
+### 1:
+
