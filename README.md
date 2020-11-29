@@ -4,7 +4,7 @@
 
 Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
  
- 
+ \
 ### Question 1:
 ```python
 
@@ -40,7 +40,7 @@ cpu_types = {
 ```
 
 
-
+\
 ### Question 2:
 
 #### a.
@@ -67,3 +67,7 @@ system.cpu_cluster.cpus.cpi                 19.348449                       # CP
 system.cpu_cluster.cpus.numCycles               97284                       # number of cpu cycles simulated
 ```
 We notice that the reported number of commited instructions is very close to the expected number of instructions by numCycles / cpi ~= 5028.
+#### c.
+From stats.txt:
+```ini
+```
