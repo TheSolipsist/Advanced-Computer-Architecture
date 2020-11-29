@@ -57,3 +57,11 @@ numThreads=1
 ```
 
 #### b.
+From stats.txt:
+```ini
+system.cpu_cluster.cpus.committedInsts           5028                       # Number of instructions committed
+system.cpu_cluster.cpus.cpi                 19.348449                       # CPI: cycles per instruction
+system.cpu_cluster.cpus.numCycles               97284                       # number of cpu cycles simulated
+```
+We notice that the reported number of commited instructions is very close to the expected number of instructions by numCycles / cpi ~= 5028.
+```
