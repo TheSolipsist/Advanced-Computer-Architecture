@@ -38,6 +38,5 @@ cpu_types = {
 }
 
 ### 2:
-```ini
-[test]
+```dosini
 mem_ranges=0:2147483648
