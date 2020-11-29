@@ -36,7 +36,9 @@ cpu_types = {
               HPI.HPI_WalkCache,
               HPI.HPI_L2)
 }
+```
 
 ### 2:
+
 ```dosini
 mem_ranges=0:2147483648
