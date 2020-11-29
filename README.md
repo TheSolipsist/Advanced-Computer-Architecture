@@ -4,6 +4,7 @@
 
 Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
 <br/>
+<br/>
 ### Question 1:
 ```python
 
@@ -39,7 +40,7 @@ cpu_types = {
 ```
 
 
-
+<br/>
 ### Question 2:
 
 #### a.
