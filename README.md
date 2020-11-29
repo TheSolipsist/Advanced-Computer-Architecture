@@ -48,3 +48,6 @@ Verification of 4GHz cpu-freq:
 ```ini
 clock=250
 ```
+Verification of 1 thread running (num-cores = 1):
+```ini
+```
