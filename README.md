@@ -73,3 +73,6 @@ From stats.txt:
 ```ini
 system.cpu_cluster.l2.overall_accesses::total          479                       # number of overall (read+write) accesses
 ```
+If gem5 didn't provide us with this value, we would calculate it by adding up the following values:
+```ini
+```
