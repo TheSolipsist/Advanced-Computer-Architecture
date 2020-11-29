@@ -3,7 +3,7 @@
 ## First Lab Questions:
 
 Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
-
+<br/>
 ### Question 1:
 ```python
 
@@ -43,7 +43,8 @@ cpu_types = {
 ### Question 2:
 
 #### a.
-From config.ini:\
+From config.ini:
+<br/>
 
 Verification of 2GB default memory size:
 ```ini
