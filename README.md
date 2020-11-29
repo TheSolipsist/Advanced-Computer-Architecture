@@ -2,7 +2,7 @@
 
 ## First Lab Questions:
 
-All results are simulated on gem5 running on VirtualBox VM Ubuntu 19.10.
+Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
  
  
 ### Question 1:
