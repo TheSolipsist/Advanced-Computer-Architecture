@@ -5,7 +5,7 @@
  
  
 ### 1:
-
+```python
 cpu_types = {
     "atomic" : ( AtomicSimpleCPU, None, None, None, None),
     "minor" : (MinorCPU,
