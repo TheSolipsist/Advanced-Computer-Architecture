@@ -78,3 +78,5 @@ If gem5 didn't provide us with this value, we would calculate it by adding up th
 system.cpu_cluster.l2.overall_accesses::.cpu_cluster.cpus.inst          332                       # number of overall (read+write) accesses
 system.cpu_cluster.l2.overall_accesses::.cpu_cluster.cpus.data          147                       # number of overall (read+write) accesses
 ```
+
+### Question 3:
