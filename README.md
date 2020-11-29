@@ -41,6 +41,7 @@ cpu_types = {
 
 
 <br/>
+
 ### Question 2:
 
 #### a.
