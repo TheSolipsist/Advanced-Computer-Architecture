@@ -61,7 +61,7 @@ numThreads=1
 ```
 
 #### b.
-From stats.txt:
+From ```code stats.txt ``` :
 ```ini
 system.cpu_cluster.cpus.committedInsts           5028                       # Number of instructions committed
 system.cpu_cluster.cpus.cpi                 19.348449                       # CPI: cycles per instruction
@@ -69,7 +69,7 @@ system.cpu_cluster.cpus.numCycles               97284                       # nu
 ```
 We notice that the reported number of commited instructions is very close to the expected number of instructions by numCycles / cpi ~= 5028.
 #### c.
-From stats.txt:
+From ```code stats.txt ``` :
 ```ini
 system.cpu_cluster.l2.overall_accesses::total          479                       # number of overall (read+write) accesses
 ```
