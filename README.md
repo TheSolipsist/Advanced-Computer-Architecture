@@ -4,7 +4,8 @@
 
 Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
  
-<br/>
+
+
 ### Question 1:
 ```python
 
@@ -40,7 +41,7 @@ cpu_types = {
 ```
 
 
-<br/>
+
 ### Question 2:
 
 #### a.
@@ -78,5 +79,7 @@ If gem5 didn't provide us with this value, we would calculate it by adding up th
 system.cpu_cluster.l2.overall_accesses::.cpu_cluster.cpus.inst          332                       # number of overall (read+write) accesses
 system.cpu_cluster.l2.overall_accesses::.cpu_cluster.cpus.data          147                       # number of overall (read+write) accesses
 ```
-<br/>
+
+
+
 ### Question 3:
