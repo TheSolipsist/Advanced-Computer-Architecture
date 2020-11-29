@@ -38,6 +38,6 @@ cpu_types = {
 }
 
 ### 2:
-```ini
+```INI
 
 mem_ranges=0:2147483648
