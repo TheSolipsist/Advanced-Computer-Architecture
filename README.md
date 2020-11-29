@@ -4,7 +4,7 @@
 
  
  
-### 1:
+### Question 1:
 ```python
 
 parser.add_argument("--cpu", type=str, choices=list(cpu_types.keys()),
@@ -38,8 +38,9 @@ cpu_types = {
 }
 ```
 
-### 2:
+### Question 2:
 
+#### a.
 Verification of 2GB default memory size:
 ```ini
 mem_ranges=0:2147483648
@@ -52,3 +53,5 @@ Verification of 1 thread running (num-cores = 1):
 ```ini
 numThreads=1
 ```
+
+#### b.
