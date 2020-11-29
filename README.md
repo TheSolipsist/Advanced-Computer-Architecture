@@ -64,4 +64,3 @@ system.cpu_cluster.cpus.cpi                 19.348449                       # CP
 system.cpu_cluster.cpus.numCycles               97284                       # number of cpu cycles simulated
 ```
 We notice that the reported number of commited instructions is very close to the expected number of instructions by numCycles / cpi ~= 5028.
-```
