@@ -43,3 +43,7 @@ cpu_types = {
 Verification of 2GB default memory size:
 ```ini
 mem_ranges=0:2147483648
+```
+Verification of 4GHz cpu-freq:
+```ini
+```
