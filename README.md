@@ -3,7 +3,8 @@
 ## First Lab Questions:
 
 Results collected by gem5 running on VirtualBox VM Ubuntu 19.10.
- 
+\
+\
 \
 ### Question 1:
 ```python
