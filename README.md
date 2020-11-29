@@ -1,4 +1,4 @@
-# Advanced-Computer-Architectureystem.cpu_cluster.l2.overall_accesses::total          479                       # number of overall (read+write) accesses
+# Advanced-Computer-Architecture
 
 ## First Lab Questions:
 
