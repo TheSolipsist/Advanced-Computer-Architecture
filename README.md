@@ -83,3 +83,18 @@ system.cpu_cluster.l2.overall_accesses::.cpu_cluster.cpus.data          147     
 
 
 ### Question 3:
+
+As seen on https://github.com/arm-university/arm-gem5-rsk/blob/master/gem5_rsk.pdf:
+
+
+#### Implementation of the gem5 In-order CPU Models
+
+
+##### AtomicSimpleCPU
+The AtomicSimpleCPU uses Atomic memory accesses. In gem5, the AtomicSimpleCPU performs alloperations for an instruction on every CPU ```tick()``` and it can get a rough estimation of overall cache access time using thelatency estimates from the atomic accesses. Naturally, AtomicSimpleCPU provides the fastest functional simulation, and is used for fast-forwarding to get to a Region Of Interest (ROI) in gem5.
+
+##### TimingSimpleCPU
+The TimingSimpleCPU adopted Timing memory access instead of the simple Atomic one. This means that it waits until memory access returns before proceeding, therefore it provides some level of timing. TimingSimpleCPU is also a fast-to-run model, since it simplifies some aspects including pipelining, which means that only a single instruction is being processed at any time. Each arithmetic instruction is executed by TimingSimpleCPU in a single cycle, while memory accesses require multiple cycles. For instance, the TimingSimpleCPU calls ```sendTiming()``` and will only complete fetch after getting a successful return from ```recvTiming()```.
+
+##### MinorCPU
+We need a more comprehensive and detailed CPU model in order to emulate realistic systems, therefore we should utilize the detailed in-order CPU models available in gem5. In older versions of gem5, a model named InOrder CPU was capable of doing the job for us, but now there is a new model called MinorCPU.  The MinorCPU is a flexible in-order processor model which was originally developed to support the Arm ISA, and is applicable to other ISAs as well. MinorCPU has a fixed four-stage in-order execution pipeline, while having configurable data structures and execute behavior; therefore it can be configured at the micro-architecture level to model a specific processor.  The four-stage pipeline implemented by MinorCPU includes fetching lines, decomposition into macro-ops, decomposition of macro-ops into micro-ops and execute. These stages are named Fetch1, Fetch2, Decode and Execute, respectively. The pipeline class controls the cyclic tick event and the idling (cycle skipping).
