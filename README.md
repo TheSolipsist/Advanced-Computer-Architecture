@@ -37,3 +37,5 @@ cpu_types = {
               HPI.HPI_L2)
 }
 
+### 2:
+```ini
