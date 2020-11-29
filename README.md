@@ -50,4 +50,5 @@ clock=250
 ```
 Verification of 1 thread running (num-cores = 1):
 ```ini
+numThreads=1
 ```
