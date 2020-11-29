@@ -38,6 +38,8 @@ cpu_types = {
 }
 ```
 
+
+
 ### Question 2:
 
 #### a.
