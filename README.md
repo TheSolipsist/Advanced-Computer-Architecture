@@ -102,7 +102,7 @@ We need a more comprehensive and detailed CPU model in order to emulate realisti
 #### a.
 Execution time for TimingSimpleCPU and MinorCPU (from their stats.txt files):
 ```tsv
-TimingSimpleCPU:
+<span style="color:black">TimingSimpleCPU:</span>
 sim_seconds                                  0.000037                       # Number of seconds simulated
 ```
 ```tsv
