@@ -136,4 +136,4 @@ sim_seconds                                  0.000036                       # Nu
 MinorCPU:
 sim_seconds                                  0.000032                       # Number of seconds simulated
 ```
-We notice a slight improvement in the simulation time, which is logical since we are using an improved memory protocol.
+We notice a slight improvement in the simulation times, which is logical since we are using an improved memory protocol.
