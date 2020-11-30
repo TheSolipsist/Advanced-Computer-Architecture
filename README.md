@@ -102,4 +102,10 @@ We need a more comprehensive and detailed CPU model in order to emulate realisti
 #### a.
 Execution time for TimingSimpleCPU and MinorCPU:
 ```js
+TimingSimpleCPU:
+
+```
+```js
+MinorCPU:
+sim_seconds                                  0.000033                       # Number of seconds simulated
 ```
