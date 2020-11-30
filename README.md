@@ -105,7 +105,7 @@ Execution time for TimingSimpleCPU and MinorCPU:
 TimingSimpleCPU:
 
 ```
-```tsv
+```csv
 MinorCPU:
 sim_seconds                                  0.000033                       # Number of seconds simulated
 ```
