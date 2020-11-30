@@ -109,3 +109,7 @@ sim_seconds                                  0.000037                       # Nu
 MinorCPU:
 sim_seconds                                  0.000033                       # Number of seconds simulated
 ```
+#### b.
+The MinorCPU model is faster than the TimingSimpleCPU model. This is logical, since the TimingSimpleCPU model waits until memory access returns before proceeding. In addition, the MinorCPU model has a fixed four-stage in-order execution pipeline.
+
+#### c.
