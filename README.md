@@ -100,7 +100,7 @@ The TimingSimpleCPU adopted Timing memory access instead of the simple Atomic on
 We need a more comprehensive and detailed CPU model in order to emulate realistic systems, therefore we should utilize the detailed in-order CPU models available in gem5. In older versions of gem5, a model named InOrder CPU was capable of doing the job for us, but now there is a new model called MinorCPU.  The MinorCPU is a flexible in-order processor model which was originally developed to support the Arm ISA, and is applicable to other ISAs as well. MinorCPU has a fixed four-stage in-order execution pipeline, while having configurable data structures and execute behavior; therefore it can be configured at the micro-architecture level to model a specific processor.  The four-stage pipeline implemented by MinorCPU includes fetching lines, decomposition into macro-ops, decomposition of macro-ops into micro-ops and execute. These stages are named Fetch1, Fetch2, Decode and Execute, respectively. The pipeline class controls the cyclic tick event and the idling (cycle skipping).
 
 #### a.
-Execution time for TimingSimpleCPU and MinorCPU (from their stats.txt files):
+Simulation time for TimingSimpleCPU and MinorCPU (from their stats.txt files):
 ```tsv
 TimingSimpleCPU:
 sim_seconds                                  0.000037                       # Number of seconds simulated
@@ -113,3 +113,27 @@ sim_seconds                                  0.000033                       # Nu
 The MinorCPU model is faster than the TimingSimpleCPU model. This is logical, since the TimingSimpleCPU model waits until memory access returns before proceeding. In addition, the MinorCPU model has a fixed four-stage in-order execution pipeline.
 
 #### c.
+By lowering the CPU clock to 0.25GHz, we get the following simulation times:
+```tsv
+TimingSimpleCPU:
+sim_seconds                                  0.000128                       # Number of seconds simulated
+```
+```tsv
+MinorCPU:
+sim_seconds                                  0.000083                       # Number of seconds simulated
+```
+We notice that the simulation time has increased, which is logical since we have lowered the CPU clock.
+
+
+
+
+By changing the memory type to DDR4-2400-8x8, we get the following simulation times:
+```tsv
+TimingSimpleCPU:
+sim_seconds                                  0.000036                       # Number of seconds simulated
+```
+```tsv
+MinorCPU:
+sim_seconds                                  0.000032                       # Number of seconds simulated
+```
+We notice a slight improvement in the simulation time, which is logical since we are using an improved memory protocol.
