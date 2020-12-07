@@ -1,4 +1,4 @@
-# Advanced-Computer-Architecture
+# Advanced-Computer-Architecture-Lab-1
 
 ## First Lab Questions:
 
